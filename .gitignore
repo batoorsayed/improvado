@@ -212,3 +212,5 @@ __marimo__/
 # Claude Code
 .claude/
 skills-lock.json
+CLAUDE.md
+PLAN.md
