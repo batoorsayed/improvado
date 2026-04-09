@@ -73,3 +73,7 @@ Top 3 campaigns are ranked by a composite score:
 - **10%** — Impression volume (log-scaled)
 
 All metrics are normalized 0–1 across the current filter state before scoring.
+
+---
+
+main.py was developed with Claude Code.
