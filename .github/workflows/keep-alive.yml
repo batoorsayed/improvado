@@ -1,0 +1,13 @@
+name: Keep Alive
+
+on:
+  schedule:
+    - cron: "0 12 */5 * *"  # every 5 days at noon UTC
+  workflow_dispatch:         # allow manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping app
+        run: curl -s -o /dev/null -w "%{http_code}" https://improvado-sda-batoors.streamlit.app/
